@@ -1,0 +1,53 @@
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.item}}</td>
+      <td>{{this.description}}</td>
+      <td>{{this.price}}</td>
+      <td><img style="width: 50px; height: 50px;" src="/product-images/{{this._id}}.jpg" alt=""></td>
+      <td><!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete</button>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Please confirm</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure, do you want to delete this item?</p>
+              </div>
+              <div class="modal-footer">
+                <a href="/admin/delete-product/{{this._id}}"><button type="button"
+                    class="btn btn-primary">Confirm</button></a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        &nbsp;
+        <a href="">
+          <div class="btn btn-primary">Edit</div>
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<!-- Modal -->
+
+
+
+<a href="/admin/add-product" class="btn float-right btn-success">Add Products</a>

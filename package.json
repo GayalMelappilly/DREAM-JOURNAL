@@ -1,0 +1,29 @@
+{
+  "name": "bro-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.4.1",
+    "express-handlebars": "^7.1.2",
+    "fileupload": "^1.0.0",
+    "http-errors": "~1.6.3",
+    "mongo": "^0.1.0",
+    "mongoclient": "^1.0.3",
+    "mongodb": "^3.7.4",
+    "mongodb-legacy": "^4.0.2",
+    "mongoose": "^7.5.2",
+    "mongosh": "^2.0.1",
+    "morgan": "~1.9.1",
+    "object-id": "^0.0.1",
+    "promise": "^8.3.0"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

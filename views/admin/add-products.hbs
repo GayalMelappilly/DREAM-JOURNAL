@@ -1,0 +1,28 @@
+<form action="/admin/add-product" class="mt-5 w-25 mx-auto" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="product" class="form-label">Product</label>
+        <input name="item" type="text" class="form-control border border-dark" id="product" aria-describedby="emailHelp">
+    </div>
+    {{!-- <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">Electronics</option>
+            <option value="2">Fashion</option>
+            <option value="3">Home Appliances</option>
+        </select>
+    </div> --}}
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input name="description" type="text" class="form-control border border-dark" id="description">
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input name="price" type="number" class="form-control border border-dark" id="price">
+    </div>
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Image</label>
+        <input name="image" class="form-control border border-dark" type="file" id="formFile">
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
